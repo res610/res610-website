@@ -9,11 +9,6 @@ import ProfileSection from '@/components/lp/ProfileSection';
 import InstagramFeed from '@/components/InstagramFeed';
 import Footer from '@/components/Footer';
 
-function LogoGap() {
-    return <div className="h-24 md:h-32" />;
-}
-
-
 export default function Home() {
     return (
         <>
@@ -22,7 +17,6 @@ export default function Home() {
                 <HeroSection />
                 <CTASection />
                 <ProblemsSection />
-                <LogoGap />
                 <SolutionSection />
                 <CaseStudiesSection />
                 <CTASection headline="実績のある私たちに、まずはご相談ください" bgBlack />
