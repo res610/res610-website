@@ -39,9 +39,9 @@ export default function HeroSection() {
                     <span className="text-accent">「IT担当」</span>を。
                 </h1>
                 <p className="text-sm md:text-base text-gray-300 mb-6 leading-relaxed">
-                    ITが苦手でも大丈夫。ホームページから業務改善まで、
+                    ひとりで悩まなくて大丈夫。
                     <br className="hidden md:block" />
-                    あなたに合った方法で一緒に解決します。
+                    困ったとき、気軽に相談できる存在がいます。
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <CTAButton variant="line" text="無料相談はこちら" />
