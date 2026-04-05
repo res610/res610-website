@@ -24,7 +24,10 @@ function ProblemCard({ problem }: { problem: Problem }) {
                         }`}
                     >
                         <div className="overflow-hidden">
-                            <p className="text-sm text-section-sub leading-relaxed border-t border-gray-200 pt-3">
+                            <p className="text-sm font-bold text-accent border-t border-gray-200 pt-3 mb-2">
+                                {problem.catchphrase}
+                            </p>
+                            <p className="text-sm text-section-sub leading-relaxed">
                                 {problem.example}
                             </p>
                         </div>
