@@ -52,7 +52,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
-                    <p>&copy; {new Date().getFullYear()} {STORE_NAME}</p>
+                    <p>&copy; {new Date().getFullYear()} RES LLC All Rights Reserved.</p>
                 </div>
             </div>
         </footer>
