@@ -5,10 +5,10 @@ export default function ServicesSection() {
     return (
         <SectionWrapper id="services">
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
-                サービス内容
+                こんな悩みを解決します
             </h2>
             <p className="text-center text-section-sub mb-12">
-                あなたの事業に合わせて、必要なサポートを提供します
+                「何ができるか」ではなく「あなたの困りごと」から考えます
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {SERVICES.map((service, index) => (

@@ -22,7 +22,7 @@ export default function SolutionSection() {
     return (
         <SectionWrapper id="solution">
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
-                合同会社RESが選ばれる理由
+                「IT担当」として選ばれる理由
             </h2>
             <p className="text-center text-section-sub mb-12">
                 こちらから現場に伺い、業務を理解した上で仕組みを作ります

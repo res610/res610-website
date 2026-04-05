@@ -34,16 +34,14 @@ export default function HeroSection() {
                     沖縄の個人事業主・小規模事業者の方へ
                 </p>
                 <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-                    ITが苦手でも大丈夫。
+                    あなたの事業に
                     <br />
-                    <span className="text-accent">現場に合わせて</span>
-                    <br className="md:hidden" />
-                    仕組みを作ります。
+                    <span className="text-accent">「IT担当」</span>を。
                 </h1>
                 <p className="text-sm md:text-base text-gray-300 mb-6 leading-relaxed">
-                    ホームページ制作から業務のデジタル化まで、
+                    ITが苦手でも大丈夫。ホームページから業務改善まで、
                     <br className="hidden md:block" />
-                    あなたの事業に合った方法で、一緒に解決します。
+                    あなたに合った方法で一緒に解決します。
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <CTAButton variant="line" text="無料相談はこちら" />

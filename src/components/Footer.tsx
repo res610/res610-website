@@ -8,7 +8,7 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg font-bold mb-3">{STORE_NAME}</h3>
                         <p className="text-footer-text text-sm leading-relaxed">
-                            ITが苦手な事業者でも安心。
+                            あなたの事業の「IT担当」。
                             <br />
                             現場に合わせた仕組みで、業務を効率化します。
                         </p>

@@ -23,7 +23,7 @@ export default function ProfileSection() {
                     <p className="text-sm text-section-muted mb-1">{STORE_NAME} 代表</p>
                     <h3 className="text-2xl font-bold mb-4 text-section-text">城間 敏光</h3>
                     <p className="text-section-sub leading-relaxed mb-4">
-                        沖縄を拠点に、個人事業主や小規模事業者のIT活用を支援しています。
+                        沖縄を拠点に、個人事業主や小規模事業者の「IT担当」として活動しています。
                         「難しいことをわかりやすく」をモットーに、
                         現場に足を運び、業務を理解した上で最適な仕組みをご提案します。
                     </p>

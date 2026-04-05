@@ -17,7 +17,7 @@ export default function CTASection({ headline, bgBlack = false }: CTASectionProp
                     {headline || 'まずは気軽にご相談ください'}
                 </h2>
                 <p className="mb-8 text-section-sub">
-                    {FREE_CONSULTATION_MINUTES}分の無料相談で、あなたの業務に合ったIT活用をご提案します
+                    {FREE_CONSULTATION_MINUTES}分の無料相談で、あなたの事業に合った進め方を一緒に考えます
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <CTAButton variant="line" />
