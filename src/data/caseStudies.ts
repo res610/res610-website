@@ -2,6 +2,7 @@ export interface CaseStudy {
     id: string;
     companyName: string;
     industry: string;
+    before: string;
     summary: string;
     description: string;
     services: string[];
@@ -18,6 +19,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         id: 'yoshi-rentacar',
         companyName: 'ヨシレンタカー',
         industry: 'レンタカー',
+        before: '新規事業、ITは何から手をつければ…',
         summary: '事業立ち上げからIT全般を継続サポート',
         description: '新規事業の立ち上げから、ホームページ制作・LINE公式アカウント・SNS運用・SEO対策まで一括で支援。事業の成長に合わせてサポートを継続しています。',
         services: ['ホームページ制作', 'LINE導入', 'SNS連携', 'SEO対策'],
@@ -29,6 +31,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         id: 'hachimine',
         companyName: '鉢嶺総合仮設株式会社',
         industry: '建設',
+        before: '紙の安全書類、現場で書いて提出が大変…',
         summary: '紙の安全書類をスマホ化し、提出率100%を達成',
         description: '紙ベースで管理していた安全書類の提出業務をスマホ対応のシステムに移行。現場からスマホで入力できる仕組みを構築し、提出率100%を実現しました。',
         services: ['業務効率化システム開発'],
@@ -40,6 +43,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         id: 'perchamomo',
         companyName: 'Percha MOMO',
         industry: 'ネイルサロン',
+        before: 'Wixの月額費用が負担、もっと安くならない？',
         summary: 'Wixから移行し、月額0円で運用可能なサイトを構築',
         description: 'Wixで運用していたサイトをリプレイスし、月額費用ゼロで運用できるホームページを構築。アメブロやInstagramとの連携で集客導線を整備しました。',
         services: ['ホームページ制作', 'アメブロ連携', 'Instagram連携'],
@@ -50,6 +54,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         id: 'o-one',
         companyName: '01（O-ONE）',
         industry: 'メンズ専門眉毛ワックスサロン',
+        before: '個人サロン、ネットで見つけてもらえない…',
         summary: 'SEO対策済みのホームページで集客を強化',
         description: 'メンズ専門の眉毛ワックスサロン向けに、SEO対策を施したホームページを制作。LINE公式アカウントの運用サポートも行い、個人サロンの課題解決を支援しました。',
         services: ['ホームページ制作', 'SEO対策', 'LINE運用サポート'],
@@ -60,6 +65,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         id: 'kintaro',
         companyName: '沖縄そば金太郎',
         industry: '飲食店',
+        before: '注文受付がバラバラで手間がかかる…',
         summary: '低コストで注文受付システムを導入',
         description: '注文受付の仕組みを低コストで構築し、業務の効率化を支援しました。',
         services: ['業務効率化システム開発'],
