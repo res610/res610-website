@@ -11,6 +11,7 @@ export interface CaseStudy {
     note?: string;
     since?: string;
     contractAmount?: string;
+    siteUrl?: string;
 }
 
 // 新着順（新しい案件が先頭）
@@ -26,6 +27,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         result: '事業立ち上げ時からIT環境を整備し、集客基盤を構築',
         image: '/images/cases/case-yoshi-rentacar.webp',
         since: '2023年〜',
+        siteUrl: 'https://yoshi-rentacar.jp/',
     },
     {
         id: 'hachimine',
@@ -38,6 +40,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         result: '安全書類の提出率100%を達成',
         image: '/images/cases/case-hachimine.webp',
         contractAmount: '月額98,000円',
+        note: '※基幹システムのため非公開',
     },
     {
         id: 'perchamomo',
@@ -49,6 +52,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         services: ['ホームページ制作', 'アメブロ連携', 'Instagram連携'],
         result: '月額0円で運用可能なサイトに移行',
         image: '/images/cases/case-perchamomo.webp',
+        siteUrl: 'https://perchamomo.com/',
     },
     {
         id: 'o-one',
@@ -60,6 +64,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         services: ['ホームページ制作', 'SEO対策', 'LINE運用サポート'],
         result: 'SEO対策済みHPで集客基盤を構築',
         image: '/images/cases/case-o-one.webp',
+        siteUrl: 'https://01-oone.com/',
     },
     {
         id: 'kintaro',

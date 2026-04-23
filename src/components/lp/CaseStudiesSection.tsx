@@ -81,6 +81,19 @@ export default function CaseStudiesSection() {
                                 {cs.note && (
                                     <p className="text-xs text-gray-400 mt-1">{cs.note}</p>
                                 )}
+                                {cs.siteUrl && (
+                                    <a
+                                        href={cs.siteUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="mt-6 inline-flex items-center gap-2 text-sm md:text-base text-accent hover:underline font-medium"
+                                    >
+                                        サイトを見る
+                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                        </svg>
+                                    </a>
+                                )}
                             </div>
                         </div>
                     ))}
