@@ -14,7 +14,6 @@ export interface CaseStudy {
     siteUrl?: string;
     // 詳細ページ追加項目（すべて optional。値が無ければ非表示）
     period?: string;           // 実施期間（例: 2023年4月〜現在 / 2024年3月〜6月）
-    team?: string;             // 体制（例: 城間1名で対応 / ディレクター1名・エンジニア2名）
     tools?: string[];          // 使用ツール（例: ['Next.js', 'LINE公式', 'Google Looker Studio']）
     keyPoints?: string[];      // 取り組みのポイント（箇条書き）
     testimonial?: {
@@ -38,9 +37,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         image: '/images/cases/case-yoshi-rentacar.webp',
         since: '2023年〜',
         siteUrl: 'https://yoshi-rentacar.jp/',
-        // ↓ レイアウト確認用サンプル。本データに差し替えてください
         period: '2023年〜現在',
-        team: '城間1名で対応',
         tools: ['Next.js', 'LINE公式アカウント', 'Instagram', 'Google Search Console'],
         keyPoints: [
             '事業立ち上げ前のヒアリングで必要なIT要素を洗い出し',
@@ -48,9 +45,8 @@ export const CASE_STUDIES: CaseStudy[] = [
             '事業成長に合わせて継続的にサポート内容を調整',
         ],
         testimonial: {
-            quote: '★レイアウト確認用ダミー★ 新規事業立ち上げで何から手をつければよいか分からなかったが、必要な順に整理してもらえて助かった。',
-            author: 'サンプル太郎',
-            role: '代表（差し替え用ダミー）',
+            quote: '元々は自動車整備屋として活動していたんですが、代車のレンタルからヒントを得て『レンタカーを始めたいな〜』と思っていたところで、RESさんに出会えました。相談してから、今の段階で必要なものを一緒に整理してもらえたので、無理なく動き出せたのが大きかったです。HPを作って終わりじゃなくて、事業の成長に合わせて引き続き相談できる安心感もあり、本業に集中できています。',
+            author: 'ヨシレンタカー 代表',
         },
     },
     {

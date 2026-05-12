@@ -164,11 +164,10 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
                     )}
 
                     {/* メタ情報 */}
-                    {(cs.period || cs.since || cs.team || cs.contractAmount || cs.note) && (
+                    {(cs.period || cs.since || cs.contractAmount || cs.note) && (
                         <section className="mb-10 text-sm text-gray-600 space-y-1">
                             {cs.period && <p>実施期間: {cs.period}</p>}
                             {!cs.period && cs.since && <p>開始時期: {cs.since}</p>}
-                            {cs.team && <p>体制: {cs.team}</p>}
                             {cs.contractAmount && (
                                 <p className="text-green-600 font-bold">継続契約: {cs.contractAmount}</p>
                             )}
