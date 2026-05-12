@@ -7,15 +7,16 @@ import CTASection from '@/components/lp/CTASection';
 import { getArticleBySlug, getAllSlugs } from '@/lib/blog';
 
 interface PageProps {
-    params: { slug: string };
+    params: Promise<{ slug: string }>;
 }
 
 export function generateStaticParams() {
     return getAllSlugs().map((slug) => ({ slug }));
 }
 
-export function generateMetadata({ params }: PageProps): Metadata {
-    const article = getArticleBySlug(params.slug);
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+    const { slug } = await params;
+    const article = getArticleBySlug(slug);
     if (!article) return {};
 
     return {
@@ -24,8 +25,9 @@ export function generateMetadata({ params }: PageProps): Metadata {
     };
 }
 
-export default function BlogArticlePage({ params }: PageProps) {
-    const article = getArticleBySlug(params.slug);
+export default async function BlogArticlePage({ params }: PageProps) {
+    const { slug } = await params;
+    const article = getArticleBySlug(slug);
     if (!article) notFound();
 
     return (

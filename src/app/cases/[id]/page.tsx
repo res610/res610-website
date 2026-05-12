@@ -8,15 +8,16 @@ import CTASection from '@/components/lp/CTASection';
 import { CASE_STUDIES } from '@/data/caseStudies';
 
 interface PageProps {
-    params: { id: string };
+    params: Promise<{ id: string }>;
 }
 
 export function generateStaticParams() {
     return CASE_STUDIES.map((cs) => ({ id: cs.id }));
 }
 
-export function generateMetadata({ params }: PageProps): Metadata {
-    const cs = CASE_STUDIES.find((c) => c.id === params.id);
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+    const { id } = await params;
+    const cs = CASE_STUDIES.find((c) => c.id === id);
     if (!cs) return {};
 
     return {
@@ -25,8 +26,9 @@ export function generateMetadata({ params }: PageProps): Metadata {
     };
 }
 
-export default function CaseStudyDetailPage({ params }: PageProps) {
-    const cs = CASE_STUDIES.find((c) => c.id === params.id);
+export default async function CaseStudyDetailPage({ params }: PageProps) {
+    const { id } = await params;
+    const cs = CASE_STUDIES.find((c) => c.id === id);
     if (!cs) notFound();
 
     return (
