@@ -90,6 +90,21 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
                         </p>
                     </section>
 
+                    {/* 取り組みのポイント */}
+                    {cs.keyPoints && cs.keyPoints.length > 0 && (
+                        <section className="mb-10">
+                            <h2 className="text-lg md:text-xl font-bold mb-3 text-gray-900">取り組みのポイント</h2>
+                            <ul className="space-y-2">
+                                {cs.keyPoints.map((point) => (
+                                    <li key={point} className="flex gap-3 text-base text-gray-700 leading-relaxed">
+                                        <span className="flex-none mt-1 w-1.5 h-1.5 rounded-full bg-accent" aria-hidden />
+                                        <span>{point}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </section>
+                    )}
+
                     {/* 導入サービス */}
                     <section className="mb-10">
                         <h2 className="text-lg md:text-xl font-bold mb-3 text-gray-900">導入サービス</h2>
@@ -105,6 +120,23 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
                         </div>
                     </section>
 
+                    {/* 使用ツール */}
+                    {cs.tools && cs.tools.length > 0 && (
+                        <section className="mb-10">
+                            <h2 className="text-lg md:text-xl font-bold mb-3 text-gray-900">使用ツール</h2>
+                            <div className="flex flex-wrap gap-2">
+                                {cs.tools.map((tool) => (
+                                    <span
+                                        key={tool}
+                                        className="text-sm text-gray-700 bg-white border border-gray-300 px-3 py-1 rounded-md"
+                                    >
+                                        {tool}
+                                    </span>
+                                ))}
+                            </div>
+                        </section>
+                    )}
+
                     {/* 成果 */}
                     <section className="mb-10 p-6 md:p-8 bg-gray-50 border border-gray-200 rounded-xl">
                         <h2 className="text-lg md:text-xl font-bold mb-3 text-gray-900">成果</h2>
@@ -113,10 +145,30 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
                         </p>
                     </section>
 
+                    {/* お客様の声 */}
+                    {cs.testimonial && (
+                        <section className="mb-10">
+                            <h2 className="text-lg md:text-xl font-bold mb-3 text-gray-900">お客様の声</h2>
+                            <blockquote className="bg-gray-50 border-l-4 border-accent p-6 md:p-8 rounded-r-lg">
+                                <p className="text-base md:text-lg text-gray-800 italic leading-relaxed">
+                                    「{cs.testimonial.quote}」
+                                </p>
+                                <footer className="mt-4 text-sm text-gray-600 not-italic">
+                                    — {cs.testimonial.author}
+                                    {cs.testimonial.role && (
+                                        <span className="ml-2 text-gray-500">（{cs.testimonial.role}）</span>
+                                    )}
+                                </footer>
+                            </blockquote>
+                        </section>
+                    )}
+
                     {/* メタ情報 */}
-                    {(cs.since || cs.contractAmount || cs.note) && (
+                    {(cs.period || cs.since || cs.team || cs.contractAmount || cs.note) && (
                         <section className="mb-10 text-sm text-gray-600 space-y-1">
-                            {cs.since && <p>開始時期: {cs.since}</p>}
+                            {cs.period && <p>実施期間: {cs.period}</p>}
+                            {!cs.period && cs.since && <p>開始時期: {cs.since}</p>}
+                            {cs.team && <p>体制: {cs.team}</p>}
                             {cs.contractAmount && (
                                 <p className="text-green-600 font-bold">継続契約: {cs.contractAmount}</p>
                             )}

@@ -12,6 +12,16 @@ export interface CaseStudy {
     since?: string;
     contractAmount?: string;
     siteUrl?: string;
+    // 詳細ページ追加項目（すべて optional。値が無ければ非表示）
+    period?: string;           // 実施期間（例: 2023年4月〜現在 / 2024年3月〜6月）
+    team?: string;             // 体制（例: 城間1名で対応 / ディレクター1名・エンジニア2名）
+    tools?: string[];          // 使用ツール（例: ['Next.js', 'LINE公式', 'Google Looker Studio']）
+    keyPoints?: string[];      // 取り組みのポイント（箇条書き）
+    testimonial?: {
+        quote: string;
+        author: string;
+        role?: string;         // 役職や立場（例: 代表 / 店主）
+    };
 }
 
 // 新着順（新しい案件が先頭）
