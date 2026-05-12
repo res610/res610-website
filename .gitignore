@@ -13,3 +13,6 @@ out/
 # misc
 *.tsbuildinfo
 next-env.d.ts
+
+# local-only docs（仕様検討メモなどはローカル管理。過去コミット履歴は残置）
+docs/
