@@ -38,6 +38,20 @@ export const CASE_STUDIES: CaseStudy[] = [
         image: '/images/cases/case-yoshi-rentacar.webp',
         since: '2023年〜',
         siteUrl: 'https://yoshi-rentacar.jp/',
+        // ↓ レイアウト確認用サンプル。本データに差し替えてください
+        period: '2023年〜現在',
+        team: '城間1名で対応',
+        tools: ['Next.js', 'LINE公式アカウント', 'Instagram', 'Google Search Console'],
+        keyPoints: [
+            '事業立ち上げ前のヒアリングで必要なIT要素を洗い出し',
+            'ホームページ・LINE・SNSを段階的に導入し、集客導線を構築',
+            '事業成長に合わせて継続的にサポート内容を調整',
+        ],
+        testimonial: {
+            quote: '★レイアウト確認用ダミー★ 新規事業立ち上げで何から手をつければよいか分からなかったが、必要な順に整理してもらえて助かった。',
+            author: 'サンプル太郎',
+            role: '代表（差し替え用ダミー）',
+        },
     },
     {
         id: 'hachimine',
