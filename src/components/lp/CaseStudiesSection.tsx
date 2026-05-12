@@ -1,6 +1,8 @@
 'use client';
 
 import { useRef } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import { CASE_STUDIES } from '@/data/caseStudies';
 
 export default function CaseStudiesSection() {
@@ -26,7 +28,7 @@ export default function CaseStudiesSection() {
             </div>
 
             {/* 横スライド */}
-            <div className="relative bg-white" style={{ height: '70vh' }}>
+            <div className="relative bg-white" style={{ minHeight: '80vh' }}>
                 {/* 左矢印 */}
                 <button
                     onClick={() => scroll('left')}
@@ -41,59 +43,101 @@ export default function CaseStudiesSection() {
                 {/* スライドコンテナ */}
                 <div
                     ref={scrollRef}
-                    className="flex h-full overflow-x-auto snap-x snap-mandatory scrollbar-hide"
+                    className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide"
                     style={{ scrollbarWidth: 'none' }}
                 >
                     {CASE_STUDIES.map((cs) => (
                         <div
                             key={cs.id}
-                            className="flex-none w-full h-full snap-center p-4 md:p-8"
+                            className="flex-none w-full snap-center p-4 md:p-8"
                         >
-                            <div className="w-full h-full rounded-2xl bg-gray-50 border border-gray-200 flex flex-col items-center justify-center px-6 md:px-16 text-center shadow-sm">
+                            <div className="w-full rounded-2xl bg-gray-50 border border-gray-200 flex flex-col px-6 md:px-12 py-8 md:py-10 shadow-sm">
+                                {/* 画像（あれば） */}
+                                {cs.image && (
+                                    <div className="relative w-full max-w-2xl mx-auto aspect-[16/9] mb-6 rounded-lg overflow-hidden bg-white">
+                                        <Image
+                                            src={cs.image}
+                                            alt={`${cs.companyName} の導入事例`}
+                                            fill
+                                            sizes="(min-width: 768px) 672px, 90vw"
+                                            className="object-cover"
+                                        />
+                                    </div>
+                                )}
+
                                 {/* 業種タグ */}
-                                <span className="text-xs md:text-sm text-gray-600 bg-gray-200 px-4 py-1 rounded-full mb-8">
-                                    {cs.industry}
-                                </span>
+                                <div className="text-center mb-6">
+                                    <span className="text-xs md:text-sm text-gray-600 bg-gray-200 px-4 py-1 rounded-full">
+                                        {cs.industry}
+                                    </span>
+                                </div>
 
                                 {/* Before */}
-                                <p className="text-base md:text-xl text-gray-700 mb-4 leading-relaxed">
+                                <p className="text-base md:text-xl text-gray-700 mb-4 leading-relaxed text-center">
                                     {cs.before}
                                 </p>
 
                                 {/* 矢印 */}
-                                <div className="text-2xl md:text-3xl text-accent mb-4">↓</div>
+                                <div className="text-2xl md:text-3xl text-accent mb-4 text-center">↓</div>
 
                                 {/* After（成果） */}
-                                <h3 className="text-xl md:text-3xl font-bold mb-6 leading-tight text-gray-900">
+                                <h3 className="text-xl md:text-3xl font-bold mb-4 leading-tight text-gray-900 text-center">
                                     {cs.result}
                                 </h3>
 
-                                {/* 社名 */}
-                                <p className="text-sm md:text-base text-gray-700 mb-2">
-                                    {cs.companyName}
+                                {/* description */}
+                                <p className="text-sm md:text-base text-gray-600 mb-5 leading-relaxed text-center max-w-2xl mx-auto">
+                                    {cs.description}
                                 </p>
-                                {cs.since && (
-                                    <p className="text-xs text-gray-400">{cs.since}</p>
-                                )}
-                                {cs.contractAmount && (
-                                    <p className="text-xs text-green-600 font-bold mt-1">継続契約: {cs.contractAmount}</p>
-                                )}
-                                {cs.note && (
-                                    <p className="text-xs text-gray-400 mt-1">{cs.note}</p>
-                                )}
-                                {cs.siteUrl && (
-                                    <a
-                                        href={cs.siteUrl}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="mt-6 inline-flex items-center gap-2 text-sm md:text-base text-accent hover:underline font-medium"
+
+                                {/* サービスタグ */}
+                                <div className="flex flex-wrap gap-2 justify-center mb-6">
+                                    {cs.services.map((service) => (
+                                        <span
+                                            key={service}
+                                            className="text-xs md:text-sm text-gray-700 bg-white border border-gray-300 px-3 py-1 rounded-md"
+                                        >
+                                            {service}
+                                        </span>
+                                    ))}
+                                </div>
+
+                                {/* 社名・メタ情報 */}
+                                <div className="text-center mb-6">
+                                    <p className="text-sm md:text-base text-gray-700">{cs.companyName}</p>
+                                    {cs.since && (
+                                        <p className="text-xs text-gray-400 mt-1">{cs.since}</p>
+                                    )}
+                                    {cs.contractAmount && (
+                                        <p className="text-xs text-green-600 font-bold mt-1">継続契約: {cs.contractAmount}</p>
+                                    )}
+                                    {cs.note && (
+                                        <p className="text-xs text-gray-400 mt-1">{cs.note}</p>
+                                    )}
+                                </div>
+
+                                {/* CTA行 */}
+                                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                                    <Link
+                                        href={`/cases/${cs.id}`}
+                                        className="text-sm md:text-base text-accent hover:underline font-medium"
                                     >
-                                        サイトを見る
-                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                        </svg>
-                                    </a>
-                                )}
+                                        詳しく見る →
+                                    </Link>
+                                    {cs.siteUrl && (
+                                        <a
+                                            href={cs.siteUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-2 text-sm md:text-base text-gray-700 hover:text-accent transition-colors"
+                                        >
+                                            サイトを見る
+                                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                            </svg>
+                                        </a>
+                                    )}
+                                </div>
                             </div>
                         </div>
                     ))}

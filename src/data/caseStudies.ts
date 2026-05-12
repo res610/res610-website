@@ -7,7 +7,7 @@ export interface CaseStudy {
     description: string;
     services: string[];
     result: string;
-    image: string;
+    image?: string;
     note?: string;
     since?: string;
     contractAmount?: string;
@@ -38,7 +38,6 @@ export const CASE_STUDIES: CaseStudy[] = [
         description: '紙ベースで管理していた安全書類の提出業務をスマホ対応のシステムに移行。現場からスマホで入力できる仕組みを構築し、提出率100%を実現しました。',
         services: ['業務効率化システム開発'],
         result: '安全書類の提出率100%を達成',
-        image: '/images/cases/case-hachimine.webp',
         contractAmount: '月額98,000円',
         note: '※基幹システムのため非公開',
     },
@@ -51,7 +50,6 @@ export const CASE_STUDIES: CaseStudy[] = [
         description: 'Wixで運用していたサイトをリプレイスし、月額費用ゼロで運用できるホームページを構築。アメブロやInstagramとの連携で集客導線を整備しました。',
         services: ['ホームページ制作', 'アメブロ連携', 'Instagram連携'],
         result: '月額0円で運用可能なサイトに移行',
-        image: '/images/cases/case-perchamomo.webp',
         siteUrl: 'https://perchamomo.com/',
     },
     {
@@ -63,7 +61,6 @@ export const CASE_STUDIES: CaseStudy[] = [
         description: 'メンズ専門の眉毛ワックスサロン向けに、SEO対策を施したホームページを制作。LINE公式アカウントの運用サポートも行い、個人サロンの課題解決を支援しました。',
         services: ['ホームページ制作', 'SEO対策', 'LINE運用サポート'],
         result: 'SEO対策済みHPで集客基盤を構築',
-        image: '/images/cases/case-o-one.webp',
         siteUrl: 'https://01-oone.com/',
     },
     {
@@ -75,7 +72,6 @@ export const CASE_STUDIES: CaseStudy[] = [
         description: '注文受付の仕組みを低コストで構築し、業務の効率化を支援しました。',
         services: ['業務効率化システム開発'],
         result: '低コストで注文受付の仕組みを導入',
-        image: '/images/cases/case-kintaro.webp',
         note: '※現在は別システムへ移行済み',
     },
 ];
