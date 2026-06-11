@@ -98,6 +98,11 @@ const jsonLd = {
     description: SITE_DESCRIPTION,
     url: siteUrl,
     email: EMAIL_ADDRESS,
+    foundingDate: "2021-06-16",
+    founder: {
+        "@type": "Person",
+        name: "城間敏光",
+    },
     image: `${siteUrl}/images/og-image.png`,
     contactPoint: {
         "@type": "ContactPoint",

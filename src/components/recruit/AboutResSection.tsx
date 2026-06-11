@@ -1,4 +1,5 @@
 import SectionWrapper from '@/components/lp/SectionWrapper';
+import Link from 'next/link';
 import { STORE_NAME } from '@/constants';
 
 export default function AboutResSection() {
@@ -17,9 +18,12 @@ export default function AboutResSection() {
                     営業をかけて追いかけるのでも、システムを売り込むのでもなく、
                     事業者のすぐ隣で、現場に合った仕組みを一緒に作り、使い続けられるように並走します。
                 </p>
-                <p className="text-section-sub leading-relaxed">
+                <p className="text-section-sub leading-relaxed mb-8">
                     派手な急成長は狙っていません。その代わり、お客様と長く付き合える仕事を、
                     一つひとつ丁寧に積み重ねています。この姿勢に共感できる方と働きたいと考えています。
+                </p>
+                <p className="text-center">
+                    <Link href="/about/" className="text-section-sub hover:text-section-text underline underline-offset-4 transition-colors text-sm">会社概要を見る →</Link>
                 </p>
             </div>
         </SectionWrapper>

@@ -45,6 +45,7 @@ const today = new Date().toISOString().split('T')[0];
 const sitemapPages = [
     { loc: '/', priority: '1.0', changefreq: 'weekly' },
     { loc: '/blog/', priority: '0.7', changefreq: 'weekly' },
+    { loc: '/about/', priority: '0.7', changefreq: 'monthly' },
     { loc: '/recruit/', priority: '0.8', changefreq: 'monthly' },
 ];
 
