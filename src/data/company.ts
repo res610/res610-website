@@ -13,10 +13,8 @@ export const COMPANY_OVERVIEW = [
     { label: '顧問税理士', value: '青葉総合税理士法人' },
     { label: '顧問司法書士', value: '司法書士法人ミカタ' },
     { label: '電話番号', value: STORE_INFO.phone },
-    // TODO: 適格請求書発行事業者登録番号（未確定・確定後に追記）
-    // { label: '登録番号', value: '' },
-    // TODO: 取引銀行（未確定・確定後に追記）
-    // { label: '取引銀行', value: '' },
+    { label: '適格請求書発行事業者登録番号', value: 'T2360003011238' },
+    { label: '取引銀行', value: '沖縄海邦銀行 八重瀬支店' },
     // ※資本金は非掲載方針（代表指示 2026-06-11）
 ];
 
