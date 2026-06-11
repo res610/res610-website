@@ -24,7 +24,7 @@ export default function RepresentativeSection() {
                     <p className="text-sm text-section-muted mb-1">{STORE_NAME} 代表社員</p>
                     <h3 className="text-2xl font-bold mb-4 text-section-text">城間 敏光</h3>
                     <p className="text-section-sub leading-relaxed mb-4">
-                        東京で約20年、IT業界でSE・プロジェクトリーダー・PMとして勤務。
+                        東京で18年以上、IT業界でSE・プロジェクトリーダー・PMとして勤務。
                         令和3年（2021年）に沖縄県八重瀬町へUターンし、合同会社RESを設立。
                         沖縄の個人事業主・小規模事業者の「IT担当」として活動しています。
                     </p>

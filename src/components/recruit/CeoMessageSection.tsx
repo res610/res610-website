@@ -23,7 +23,7 @@ export default function CeoMessageSection() {
                     <p className="text-sm text-section-muted mb-1">{STORE_NAME} 代表</p>
                     <h3 className="text-2xl font-bold mb-4 text-section-text">城間 敏光</h3>
                     <p className="text-section-sub leading-relaxed mb-4">
-                        私自身、東京で約20年エンジニアとして働いたあと、沖縄にUターンしてこの会社を立ち上げました。
+                        私自身、東京で18年以上エンジニアとして働いたあと、沖縄にUターンしてこの会社を立ち上げました。
                         「沖縄に帰りたい。でも、東京でやってきた仕事のレベルと収入を、沖縄で維持できるのか」——
                         その不安は、誰よりもよくわかります。私が同じ道を通ってきたからです。
                     </p>
