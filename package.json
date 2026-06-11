@@ -6,7 +6,7 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint",
+        "lint": "eslint .",
         "export": "next build"
     },
     "dependencies": {
@@ -27,7 +27,7 @@
         "@types/node": "^25.6.0",
         "@types/react": "^19.0.0",
         "@types/react-dom": "^19.0.0",
-        "eslint": "^10.3.0",
+        "eslint": "^9.39.4",
         "eslint-config-next": "^16.2.7",
         "postcss": "^8.4.38",
         "tailwindcss": "^4.2.4",
