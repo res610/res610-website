@@ -1,3 +1,5 @@
+import { STORE_INFO } from '@/constants';
+
 // 会社概要ページ用データ
 
 // ─── 会社概要テーブル ───
@@ -5,13 +7,11 @@ export const COMPANY_OVERVIEW = [
     { label: '会社名', value: '合同会社RES' },
     { label: '代表者', value: '代表社員 城間 敏光' },
     { label: '設立', value: '令和3年（2021年）6月16日' },
-    // TODO: 所在地は番地まで掲載OK（代表確認済み 2026-06-11）。正式な番地の支給待ち
-    { label: '所在地', value: '〒901-0400 沖縄県島尻郡八重瀬町' },
+    { label: '所在地', value: `${STORE_INFO.postalCode} ${STORE_INFO.address}` },
     { label: '事業内容', value: 'システム開発 / SES / Web制作 / デジタルマーケティング' },
     { label: '顧問税理士', value: '青葉総合税理士法人' },
     { label: '顧問司法書士', value: '司法書士法人ミカタ' },
-    // TODO: 電話番号（掲載OK・代表確認済み 2026-06-11。番号の支給待ち）
-    // { label: '電話番号', value: '' },
+    { label: '電話番号', value: STORE_INFO.phone },
     // TODO: 適格請求書発行事業者登録番号（未確定・確定後に追記）
     // { label: '登録番号', value: '' },
     // TODO: 取引銀行（未確定・確定後に追記）
@@ -20,7 +20,7 @@ export const COMPANY_OVERVIEW = [
 ];
 
 // ─── 沿革 ───
-// TODO: 設立以降の節目（LINAリリース、主要取引開始等）は代表から支給待ち（勝手に創作しない）
+// 当面は設立のみ掲載（代表指示 2026-06-11）。節目が増えたら追記する
 export const COMPANY_HISTORY = [
     { date: '令和3年（2021年）6月', event: '沖縄県島尻郡八重瀬町にて合同会社RESを設立' },
 ];

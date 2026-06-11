@@ -10,10 +10,10 @@ export const MAP_ZOOM_LEVEL = 15;
 
 // ★ 会社情報
 export const STORE_INFO = {
-    postalCode: '〒901-0400',
-    address: '沖縄県島尻郡八重瀬町',
+    postalCode: '〒901-0504',
+    address: '沖縄県島尻郡八重瀬町537番地',
     building: '',
-    phone: '',
+    phone: '090-3792-5119',
     openingHours: '9:00〜18:00',
     closedDay: '土日祝',
     parking: '',

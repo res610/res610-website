@@ -10,7 +10,6 @@ export default function AccessSection() {
                 アクセス
             </h2>
             <div className="max-w-3xl mx-auto text-center">
-                {/* TODO: 番地まで掲載OK（代表確認済み）。番地支給後に constants の STORE_INFO を更新 */}
                 <p className="text-section-text font-bold mb-2">
                     {STORE_INFO.postalCode} {STORE_INFO.address}
                 </p>
