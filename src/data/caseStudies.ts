@@ -70,6 +70,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         description: '紙ベースで管理していた安全書類の提出業務をスマホ対応のシステムに移行。現場からスマホで入力できる仕組みを構築し、提出率100%を実現しました。',
         services: ['業務効率化システム開発'],
         result: '安全書類の提出率100%を達成',
+        image: '/images/cases/case-hachimine.webp',
         contractAmount: '月額98,000円',
         note: '※基幹システムのため非公開',
     },
