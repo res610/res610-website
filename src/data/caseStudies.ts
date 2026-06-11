@@ -34,6 +34,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         description: 'メンズ専門の眉毛ワックスサロン向けに、SEO対策を施したホームページを制作。LINE公式アカウントの運用サポートも行い、個人サロンの課題解決を支援しました。',
         services: ['ホームページ制作', 'SEO対策', 'LINE運用サポート'],
         result: 'SEO対策済みHPで集客基盤を構築',
+        image: '/images/cases/case-o-one.webp',
         siteUrl: 'https://01-oone.com/',
     },
     {
