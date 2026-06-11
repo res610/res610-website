@@ -7,8 +7,8 @@ import { STORE_NAME, LINE_URL } from '@/constants';
 
 const NAV_ITEMS = [
     { href: '/#problems', label: 'よくある悩み' },
-    { href: '/#cases', label: '実績' },
-    { href: '/#services', label: 'サービス' },
+    { href: '/cases/', label: '実績' },
+    { href: '/services/', label: 'サービス' },
     { href: '/blog/', label: 'ブログ' },
     { href: '/about/', label: '会社概要' },
     { href: '/recruit/', label: '採用情報' },

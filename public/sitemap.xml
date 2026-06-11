@@ -1,43 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://localhost:3000/</loc>
+        <loc>https://res610.com/</loc>
         <lastmod>2026-06-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>http://localhost:3000/blog/</loc>
+        <loc>https://res610.com/blog/</loc>
         <lastmod>2026-06-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>http://localhost:3000/about/</loc>
+        <loc>https://res610.com/services/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://res610.com/cases/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://res610.com/about/</loc>
         <lastmod>2026-06-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>http://localhost:3000/recruit/</loc>
+        <loc>https://res610.com/recruit/</loc>
         <lastmod>2026-06-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>http://localhost:3000/blog/it-failure-reasons/</loc>
+        <loc>https://res610.com/cases/yoshi-rentacar/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://res610.com/cases/hachimine/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://res610.com/cases/perchamomo/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://res610.com/cases/o-one/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://res610.com/cases/kintaro/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://res610.com/blog/it-failure-reasons/</loc>
         <lastmod>2026-06-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>http://localhost:3000/blog/reduce-excel-work/</loc>
+        <loc>https://res610.com/blog/reduce-excel-work/</loc>
         <lastmod>2026-06-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>http://localhost:3000/blog/stop-paper-management/</loc>
+        <loc>https://res610.com/blog/stop-paper-management/</loc>
         <lastmod>2026-06-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>

@@ -22,9 +22,10 @@ export default function CaseStudiesSection() {
             {/* ヘッダー */}
             <div className="text-center py-8 px-4 bg-section-bg">
                 <h2 className="text-2xl md:text-3xl font-bold mb-2 text-section-text">導入実績</h2>
-                <p className="text-section-sub text-sm">
+                <p className="text-section-sub text-sm mb-3">
                     業種を問わず、現場の課題を解決してきました
                 </p>
+                <Link href="/cases/" className="text-section-sub hover:text-section-text underline underline-offset-4 transition-colors text-sm">実績一覧を見る →</Link>
             </div>
 
             {/* 横スライド */}

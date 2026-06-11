@@ -45,9 +45,18 @@ const today = new Date().toISOString().split('T')[0];
 const sitemapPages = [
     { loc: '/', priority: '1.0', changefreq: 'weekly' },
     { loc: '/blog/', priority: '0.7', changefreq: 'weekly' },
+    { loc: '/services/', priority: '0.9', changefreq: 'monthly' },
+    { loc: '/cases/', priority: '0.8', changefreq: 'monthly' },
     { loc: '/about/', priority: '0.7', changefreq: 'monthly' },
     { loc: '/recruit/', priority: '0.8', changefreq: 'monthly' },
 ];
+
+// 実績詳細ページをサイトマップに追加
+// （src/data/caseStudies.ts はTSのためここから読めない。実績の増減時はこのID一覧も更新する）
+const caseStudyIds = ['yoshi-rentacar', 'hachimine', 'perchamomo', 'o-one', 'kintaro'];
+caseStudyIds.forEach(id => {
+    sitemapPages.push({ loc: `/cases/${id}/`, priority: '0.7', changefreq: 'monthly' });
+});
 
 // content/blog/ からブログ記事を検出してサイトマップに追加
 const blogDir = path.join(__dirname, 'content', 'blog');

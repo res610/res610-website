@@ -23,6 +23,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {
         title: `${cs.companyName} の導入事例 | 合同会社RES`,
         description: cs.summary,
+        alternates: {
+            canonical: `/cases/${cs.id}/`,
+        },
     };
 }
 
@@ -40,7 +43,7 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
                     <nav className="text-sm text-gray-500 mb-8">
                         <Link href="/" className="hover:text-black transition-colors">ホーム</Link>
                         <span className="mx-2">/</span>
-                        <Link href="/#cases" className="hover:text-black transition-colors">導入実績</Link>
+                        <Link href="/cases/" className="hover:text-black transition-colors">導入実績</Link>
                         <span className="mx-2">/</span>
                         <span className="text-gray-700">{cs.companyName}</span>
                     </nav>
@@ -195,7 +198,7 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
                     {/* 戻る */}
                     <div className="border-t border-gray-200 pt-8">
                         <Link
-                            href="/#cases"
+                            href="/cases/"
                             className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-black transition-colors"
                         >
                             ← 導入実績一覧に戻る
