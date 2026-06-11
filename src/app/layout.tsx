@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Zen_Maru_Gothic } from "next/font/google";
+import { Zen_Kaku_Gothic_New } from "next/font/google";
 import "./globals.css";
 import { STORE_NAME, STORE_NAME_FULL, STORE_INFO, LINE_URL, INSTAGRAM_URL, EMAIL_ADDRESS } from "@/constants";
 
-const zenMaruGothic = Zen_Maru_Gothic({
+const zenKakuGothicNew = Zen_Kaku_Gothic_New({
     subsets: ["latin"],
     weight: ["400", "700"],
     display: "swap",
@@ -192,7 +192,7 @@ export default function RootLayout({
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
                 />
             </head>
-            <body className={`antialiased ${zenMaruGothic.className}`}>
+            <body className={`antialiased ${zenKakuGothicNew.className}`}>
                 {children}
             </body>
         </html>
