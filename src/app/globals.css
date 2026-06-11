@@ -1,6 +1,9 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
-:root {
+/* Tailwind v4 はここ（@theme）の --color-* からユーティリティクラスを生成する
+   （例: --color-section-bg → bg-section-bg）。tailwind.config.ts は使われない */
+@theme {
     /* ベースカラー */
     --color-body-bg: #ffffff;
     --color-body-text: #171717;
@@ -34,10 +37,4 @@ body {
     color: var(--color-body-text);
     background: var(--color-body-bg);
     font-family: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
-}
-
-@layer utilities {
-    .text-balance {
-        text-wrap: balance;
-    }
 }
