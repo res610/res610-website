@@ -95,6 +95,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         description: '注文受付の仕組みを低コストで構築し、業務の効率化を支援しました。',
         services: ['業務効率化システム開発'],
         result: '低コストで注文受付の仕組みを導入',
+        image: '/images/cases/case-kintaro.webp',
         note: '※現在は別システムへ移行済み',
     },
 ];
