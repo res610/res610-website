@@ -83,6 +83,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         description: 'Wixで運用していたサイトをリプレイスし、月額費用ゼロで運用できるホームページを構築。アメブロやInstagramとの連携で集客導線を整備しました。',
         services: ['ホームページ制作', 'アメブロ連携', 'Instagram連携'],
         result: '月額0円で運用可能なサイトに移行',
+        image: '/images/cases/case-perchamomo.webp',
         siteUrl: 'https://perchamomo.com/',
     },
     {
