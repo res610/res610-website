@@ -60,7 +60,7 @@ export const RECRUIT_WORK_STYLES = [
 export const RECRUIT_REQUIREMENTS = [
     { label: '職種', value: 'ソフトウェアエンジニア（システム開発/SES）' },
     { label: '雇用形態', value: '正社員' },
-    { label: '給与', value: '月給35万円〜45万円（経験・スキルによる）' },
+    { label: '給与', value: '想定年収400万円〜500万円（経験・スキルによる）' },
     { label: '勤務地', value: '沖縄県八重瀬町（フルリモート可）' },
     { label: '休日・休暇', value: '完全週休2日制（土日祝）、年末年始休暇、年次有給休暇' },
     { label: '保険', value: '社会保険完備（健康保険・厚生年金・雇用保険・労災保険）' },
