@@ -15,22 +15,18 @@ export const HERO_COPY = {
 // ─── 仕事内容 ───
 export const RECRUIT_JOBS = [
     {
-        icon: '💻',
         title: 'システム開発・SES',
         description: '業務システムの受託開発と、SESによる開発支援。設計から実装・運用まで、一気通貫で担当します。',
     },
     {
-        icon: '🌐',
         title: 'Web制作・デジタルマーケティング',
         description: '沖縄の小規模事業者のホームページ制作と、集客につなげるデジタルマーケティング支援。',
     },
     {
-        icon: '📦',
         title: '自社プロダクト開発',
         description: 'LINA、res-ai-staff などの自社プロダクトの開発・改善。受託だけでなく、自分たちのサービスを育てる仕事です。',
     },
     {
-        icon: '🤖',
         title: 'AI駆動開発',
         description: 'Claude Code を全面活用した開発スタイル。AIと協働する開発環境が、すでに日常になっています。',
     },
@@ -39,17 +35,14 @@ export const RECRUIT_JOBS = [
 // ─── 働き方 ───
 export const RECRUIT_WORK_STYLES = [
     {
-        icon: '🏝',
         title: 'フルリモート可',
         description: '八重瀬町の拠点を持ちつつ、フルリモート勤務も可能。沖縄での暮らしに合わせた働き方ができます。',
     },
     {
-        icon: '🎯',
         title: '裁量の大きさ',
         description: '設計から実装・運用まで、一人で回せる人にはまるごと任せます。細かい承認フローはありません。',
     },
     {
-        icon: '🤝',
         title: '代表との距離の近さ',
         description: '代表と業務委託パートナーによる少数体制。意思決定は速く、疑問はその場で解消できます。会社のこれからを一緒に作る立場です。',
     },

@@ -4,17 +4,14 @@ const SOLUTIONS = [
     {
         title: '現場に合わせて仕組みを作る',
         description: '業務の流れを直接見て理解した上で、あなたの現場に合った仕組みを提案します。',
-        icon: '🔍',
     },
     {
         title: '商品を売らない。あなたに合うものを選ぶ',
         description: '世の中のツールやサービスから、あなたの事業に本当に必要なものだけを一緒に選びます。',
-        icon: '🤝',
     },
     {
         title: '小さく始められる',
         description: 'いきなり大きな投資は不要。まずは一番困っていることから、小さく始められます。',
-        icon: '🌱',
     },
 ];
 
@@ -30,7 +27,6 @@ export default function SolutionSection() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {SOLUTIONS.map((solution, index) => (
                     <div key={index} className="text-center">
-                        <span className="text-5xl block mb-4">{solution.icon}</span>
                         <h3 className="text-lg font-bold mb-3 text-section-text">{solution.title}</h3>
                         <p className="text-section-sub text-sm leading-relaxed">{solution.description}</p>
                     </div>

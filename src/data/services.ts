@@ -2,7 +2,6 @@ export interface Service {
     id: string;
     title: string;
     description: string;
-    icon: string;
     // 以下は /services/ ページ用の詳細情報
     problems: string[];
     features: { title: string; description: string }[];
@@ -14,7 +13,6 @@ export const SERVICES: Service[] = [
         id: 'homepage',
         title: 'ホームページ制作',
         description: '集客に強いホームページを、事業に合わせて制作。SNSやLINEとの連携もサポートします。',
-        icon: '🌐',
         problems: [
             'ホームページがない、あっても古くて更新できない',
             'WixなどのHP作成サービスの月額費用が負担',
@@ -40,7 +38,6 @@ export const SERVICES: Service[] = [
         id: 'system',
         title: '業務効率化システム開発',
         description: '紙やExcelの業務をデジタル化。現場に合った仕組みで、ミスと手間を減らします。',
-        icon: '⚙️',
         problems: [
             '紙の書類を現場で書いて、事務所に持ち帰って転記している',
             'Excelファイルが増えすぎて、どれが最新かわからない',
@@ -66,7 +63,6 @@ export const SERVICES: Service[] = [
         id: 'support',
         title: 'IT導入支援',
         description: '何を使えばいいかわからない方へ。現状を見て、最適なツールと進め方をご提案します。',
-        icon: '💡',
         problems: [
             'ITで効率化したいが、何から手をつければいいかわからない',
             'ツールを契約したものの、使いこなせていない',

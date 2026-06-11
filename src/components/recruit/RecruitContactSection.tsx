@@ -16,9 +16,6 @@ export default function RecruitContactSection() {
                     人材紹介エージェント経由でのご応募・お問い合わせも受け付けています。
                 </p>
                 <a href={`mailto:${EMAIL_ADDRESS}`} className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-white font-bold py-4 px-8 rounded-full transition-colors min-w-[280px] text-lg">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
                     メールで問い合わせる
                 </a>
                 <p className="mt-3 text-xs text-section-muted">{EMAIL_ADDRESS}</p>

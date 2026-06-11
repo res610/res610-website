@@ -13,7 +13,6 @@ export default function WorkStyleSection() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {RECRUIT_WORK_STYLES.map((style, index) => (
                     <div key={index} className="bg-card-bg backdrop-blur-sm rounded-xl p-8 text-center">
-                        <span className="text-5xl block mb-4">{style.icon}</span>
                         <h3 className="text-lg font-bold mb-3 text-section-text">{style.title}</h3>
                         <p className="text-section-sub text-sm leading-relaxed">{style.description}</p>
                     </div>

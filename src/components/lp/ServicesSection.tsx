@@ -14,7 +14,6 @@ export default function ServicesSection() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {SERVICES.map((service) => (
                     <Link key={service.id} href={`/services/#${service.id}`} className="block bg-card-bg backdrop-blur-sm rounded-xl p-8 text-center hover:bg-white/20 transition-colors">
-                        <span className="text-5xl block mb-4">{service.icon}</span>
                         <h3 className="text-lg font-bold mb-3 text-section-text">{service.title}</h3>
                         <p className="text-section-sub text-sm leading-relaxed">{service.description}</p>
                     </Link>

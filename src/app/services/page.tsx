@@ -70,10 +70,7 @@ export default function ServicesPage() {
                             const relatedCases = CASE_STUDIES.filter((cs) => service.caseIds.includes(cs.id));
                             return (
                                 <section key={service.id} id={service.id} className="scroll-mt-20">
-                                    <div className="flex items-center gap-4 mb-6">
-                                        <span className="text-4xl">{service.icon}</span>
-                                        <h2 className="text-2xl md:text-3xl font-bold">{service.title}</h2>
-                                    </div>
+                                    <h2 className="text-2xl md:text-3xl font-bold mb-6">{service.title}</h2>
                                     <p className="text-gray-700 leading-relaxed mb-8">{service.description}</p>
 
                                     <h3 className="text-base font-bold text-gray-900 mb-3">こんなお悩みの方へ</h3>

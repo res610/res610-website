@@ -15,7 +15,6 @@ function ProblemCard({ problem }: { problem: Problem }) {
             onClick={() => setIsOpen((prev) => !prev)}
         >
             <div className="flex items-start gap-4">
-                <span className="text-3xl flex-shrink-0">{problem.icon}</span>
                 <div className="flex-1">
                     <p className="text-base leading-relaxed text-card-text">{problem.text}</p>
                     <div
