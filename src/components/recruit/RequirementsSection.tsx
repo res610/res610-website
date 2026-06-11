@@ -16,9 +16,6 @@ export default function RequirementsSection() {
                         </div>
                     ))}
                 </dl>
-                <p className="mt-6 text-xs text-section-muted">
-                    ※休日・保険等の詳細は、面談時にご説明します。
-                </p>
             </div>
         </SectionWrapper>
     );
