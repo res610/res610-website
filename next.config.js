@@ -53,7 +53,7 @@ const sitemapPages = [
 
 // 実績詳細ページをサイトマップに追加
 // （src/data/caseStudies.ts はTSのためここから読めない。実績の増減時はこのID一覧も更新する）
-const caseStudyIds = ['yoshi-rentacar', 'hachimine', 'perchamomo', 'o-one', 'kintaro'];
+const caseStudyIds = ['o-one', 'yoshi-rentacar', 'hachimine', 'perchamomo', 'kintaro'];
 caseStudyIds.forEach(id => {
     sitemapPages.push({ loc: `/cases/${id}/`, priority: '0.7', changefreq: 'monthly' });
 });

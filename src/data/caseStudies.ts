@@ -23,8 +23,19 @@ export interface CaseStudy {
     };
 }
 
-// 新着順（新しい案件が先頭）
+// 重要顧客順（代表指定。01 → ヨシレンタカー → 鉢嶺 → Percha MOMO → 金太郎）
 export const CASE_STUDIES: CaseStudy[] = [
+    {
+        id: 'o-one',
+        companyName: '01（O-ONE）',
+        industry: 'メンズ専門眉毛ワックスサロン',
+        before: '個人サロン、ネットで見つけてもらえない…',
+        summary: 'SEO対策済みのホームページで集客を強化',
+        description: 'メンズ専門の眉毛ワックスサロン向けに、SEO対策を施したホームページを制作。LINE公式アカウントの運用サポートも行い、個人サロンの課題解決を支援しました。',
+        services: ['ホームページ制作', 'SEO対策', 'LINE運用サポート'],
+        result: 'SEO対策済みHPで集客基盤を構築',
+        siteUrl: 'https://01-oone.com/',
+    },
     {
         id: 'yoshi-rentacar',
         companyName: 'ヨシレンタカー',
@@ -71,17 +82,6 @@ export const CASE_STUDIES: CaseStudy[] = [
         services: ['ホームページ制作', 'アメブロ連携', 'Instagram連携'],
         result: '月額0円で運用可能なサイトに移行',
         siteUrl: 'https://perchamomo.com/',
-    },
-    {
-        id: 'o-one',
-        companyName: '01（O-ONE）',
-        industry: 'メンズ専門眉毛ワックスサロン',
-        before: '個人サロン、ネットで見つけてもらえない…',
-        summary: 'SEO対策済みのホームページで集客を強化',
-        description: 'メンズ専門の眉毛ワックスサロン向けに、SEO対策を施したホームページを制作。LINE公式アカウントの運用サポートも行い、個人サロンの課題解決を支援しました。',
-        services: ['ホームページ制作', 'SEO対策', 'LINE運用サポート'],
-        result: 'SEO対策済みHPで集客基盤を構築',
-        siteUrl: 'https://01-oone.com/',
     },
     {
         id: 'kintaro',
