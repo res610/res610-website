@@ -45,6 +45,7 @@ const today = new Date().toISOString().split('T')[0];
 const sitemapPages = [
     { loc: '/', priority: '1.0', changefreq: 'weekly' },
     { loc: '/blog/', priority: '0.7', changefreq: 'weekly' },
+    { loc: '/recruit/', priority: '0.8', changefreq: 'monthly' },
 ];
 
 // content/blog/ からブログ記事を検出してサイトマップに追加
