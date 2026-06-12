@@ -9,12 +9,14 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { pipeline } from 'node:stream/promises';
-import { Readable } from 'node:stream';
+import sharp from 'sharp'; // Next.js 同梱の sharp を利用（追加インストール不要）
 
 // ─── Configuration ───
 const POST_COUNT = 9;
 const IMAGE_DIR = 'public/images/instagram';
+// サイトでの表示は最大176px幅（Retina 2倍強を確保しつつフルサイズ保存の転送量ムダを防ぐ）
+const THUMB_WIDTH = 400;
+const THUMB_QUALITY = 80;
 const JSON_PATH = 'src/data/instagram.json';
 const API_VERSION = 'v21.0';
 const API_BASE = `https://graph.instagram.com/${API_VERSION}`;
@@ -114,8 +116,11 @@ async function downloadImage(url, filepath) {
     if (!response.ok) {
         throw new Error(`HTTP ${response.status}`);
     }
-    const fileStream = fs.createWriteStream(filepath);
-    await pipeline(Readable.fromWeb(response.body), fileStream);
+    const buffer = Buffer.from(await response.arrayBuffer());
+    await sharp(buffer)
+        .resize({ width: THUMB_WIDTH, withoutEnlargement: true })
+        .jpeg({ quality: THUMB_QUALITY })
+        .toFile(filepath);
 }
 
 function truncateCaption(caption, maxLength) {

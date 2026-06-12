@@ -14,22 +14,20 @@ function ProblemCard({ problem }: { problem: Problem }) {
             onMouseLeave={() => setIsOpen(false)}
             onClick={() => setIsOpen((prev) => !prev)}
         >
-            <div className="flex items-start gap-4">
-                <div className="flex-1">
-                    <p className="text-base leading-relaxed text-card-text">{problem.text}</p>
-                    <div
-                        className={`grid transition-all duration-300 ease-in-out ${
-                            isOpen ? 'grid-rows-[1fr] opacity-100 mt-3' : 'grid-rows-[0fr] opacity-0'
-                        }`}
-                    >
-                        <div className="overflow-hidden">
-                            <p className="text-sm font-bold text-accent border-t border-gray-200 pt-3 mb-2">
-                                {problem.catchphrase}
-                            </p>
-                            <p className="text-sm text-section-sub leading-relaxed">
-                                {problem.example}
-                            </p>
-                        </div>
+            <div>
+                <p className="text-base leading-relaxed text-card-text">{problem.text}</p>
+                <div
+                    className={`grid transition-all duration-300 ease-in-out ${
+                        isOpen ? 'grid-rows-[1fr] opacity-100 mt-3' : 'grid-rows-[0fr] opacity-0'
+                    }`}
+                >
+                    <div className="overflow-hidden">
+                        <p className="text-sm font-bold text-accent border-t border-gray-200 pt-3 mb-2">
+                            {problem.catchphrase}
+                        </p>
+                        <p className="text-sm text-section-sub leading-relaxed">
+                            {problem.example}
+                        </p>
                     </div>
                 </div>
             </div>
