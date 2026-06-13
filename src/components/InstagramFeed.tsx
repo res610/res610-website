@@ -36,7 +36,7 @@ export default function InstagramFeed() {
                 </div>
 
                 {displayPosts.length > 0 ? (
-                    <div className="overflow-hidden -mx-4 md:-mx-8 py-6">
+                    <div className="overflow-hidden -mx-4 py-6">
                         <style>{`
                             @keyframes marquee {
                                 0% { transform: translateX(0); }
