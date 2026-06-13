@@ -111,6 +111,31 @@ export default function ServicesPage() {
                         })}
                     </div>
 
+                    <div className="mt-16 bg-gradient-to-br from-accent/5 to-gray-50 border border-gray-200 rounded-2xl p-8 md:p-10">
+                        <span className="inline-block text-xs font-bold text-accent bg-accent/10 rounded-full px-3 py-1 mb-4">AI活用</span>
+                        <h2 className="text-2xl md:text-3xl font-bold mb-4">AIに任せきりにはしません。20年の経験で、使いこなします</h2>
+                        <p className="text-gray-700 leading-relaxed mb-4">
+                            RESでは、ホームページやシステムの制作に、AnthropicのAI「Claude」を活用しています。ただし、AIに丸投げはしません。「何を作るか」「その作りで本当にお客様の役に立つか」——大事な判断とチェックは、必ず私たちの目で行います。
+                        </p>
+                        <p className="text-gray-700 leading-relaxed mb-8">
+                            AIは、<strong className="font-bold">経験のある人が使ってこそ</strong>力を発揮する道具です。RESには20年以上の現場経験があるからこそ、AIが出した答えの良し悪しを見抜き、そのまま使える部分と人が手をかけるべき部分を見極められます。<strong className="font-bold">スピードはAIで、品質は経験で。</strong>これがRESの作り方です。
+                        </p>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div className="bg-white border border-gray-200 rounded-xl p-6">
+                                <h3 className="font-bold text-gray-900 mb-2">判断するのは、人</h3>
+                                <p className="text-sm text-gray-600 leading-relaxed">設計や「現場に何が必要か」の判断は、私たちが行います。AIはその実装を速めてくれる相棒。だから、速くても芯のぶれないものができあがります。</p>
+                            </div>
+                            <div className="bg-white border border-gray-200 rounded-xl p-6">
+                                <h3 className="font-bold text-gray-900 mb-2">20年の経験で見極める</h3>
+                                <p className="text-sm text-gray-600 leading-relaxed">AIが出したものを、そのまま納品することはありません。20年以上培った経験の目で一つひとつ確認し、SEOやセキュリティのチェックも重ねた上でお届けします。</p>
+                            </div>
+                            <div className="bg-white border border-gray-200 rounded-xl p-6">
+                                <h3 className="font-bold text-gray-900 mb-2">お客様にもAIの力を</h3>
+                                <p className="text-sm text-gray-600 leading-relaxed">いま、Web集客の状況をAIがわかりやすくレポートして届ける仕組みを育てています。ここでもAI任せにせず、人の視点を添えて「次に何をすればいいか」が伝わる形を目指しています。</p>
+                            </div>
+                        </div>
+                    </div>
+
                     <div className="mt-16 border-t border-gray-200 pt-10">
                         <h2 className="text-xl font-bold mb-4">進め方</h2>
                         <ol className="space-y-3">
